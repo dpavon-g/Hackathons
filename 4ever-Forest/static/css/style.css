@@ -1,0 +1,159 @@
+@keyframes moveLogo {
+    0% {
+        transform: translate(0, 0); /* La posición inicial es la posición actual */
+    }
+    100% {
+        transform: translate(-150%, -150%); /* Mueve el logo hacia arriba y a la izquierda */
+    }
+}
+
+.logoInicio {
+    width: 25%;
+    height: auto;
+    transition: opacity 0.5s ease;
+    position: relative; /* Añade posición relativa para ajustar la posición */
+
+}
+
+.moving-logo {
+    animation: moveLogo 2s ease forwards; /* Aplica la animación de movimiento */
+}
+
+.botonPage {
+    background-color: white;
+    border-color: white;
+    color: #ff955d;
+    width: 15%;
+    height: auto;
+}
+
+.botonPage:active {
+    background-color: #00112b !important;
+    border-color: #00112b !important;
+    color: #ff955d !important; 
+}
+
+.botonPage:hover {
+    background-color: #105651;
+    border-color: #105651;
+    color: white;
+}
+
+body {
+    background-color: #ff955d;
+    transition: background-color 1s ease;
+}
+
+.white_background {
+    background-color: rgb(252, 238, 229);
+}
+
+.spinner-border {
+    color: #ff955d; /* Cambia el color del icono a naranja */
+}
+
+.modal-transparent {
+    background-color: transparent !important; /* Hace que el fondo del modal sea transparente */
+    box-shadow: none !important; /* Elimina cualquier sombra del modal */
+}
+
+#map-container {
+    width: 300px; /* Ancho del cuadro en píxeles o porcentaje */
+    height: 300px; /* Alto del cuadro en píxeles o porcentaje */
+    margin: 0 auto; /* Centrar el cuadro horizontalmente en la página */
+}
+
+.mshide {
+    display: none;
+}
+
+#canvasOne {
+    position: absolute;
+    top: 10%; /* Ajusta la posición superior según sea necesario */
+    left: 60%; /* Coloca el canvas en la mitad horizontal */
+    transform: translateX(-50%); /* Centra horizontalmente el canvas */
+    width: 682px; /* Establece el ancho del canvas */
+    height: 520px; /* Establece la altura del canvas */
+}
+
+.notification {
+    transition: opacity 0.5s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); /* Gradiente transparente a transparente */
+    }
+    100% {
+        opacity: 1;
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)); /* Gradiente transparente a opaco */
+    }
+}
+
+.gradient-opacity {
+    animation: fadeIn 1s ease forwards; /* Aplica la animación con duración de 0.5 segundos */
+}
+
+.custom-rounded {
+    z-index: 9999; /* Valor alto para que esté por encima de otros elementos */
+    border-top-left-radius: 10px; /* Redondea la esquina superior izquierda */
+    border-top-right-radius: 10px; /* Redondea la esquina superior derecha */
+    border-bottom-left-radius: 10px; /* Redondea la esquina inferior izquierda */
+    border-bottom-right-radius: 10px; /* Redondea la esquina inferior derecha */
+    border: 2px solid #105651; /* Color del borde y ancho del borde */
+}
+
+.green {
+    color: #105651 !important;
+}
+
+/* Estilos para el menú hamburguesa */
+.menu-hamburger {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+
+  /* Estilos para el menú desplegable */
+  .nav-menu {
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    z-index: 999;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  .nav-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .nav-menu li {
+    margin-bottom: 10px;
+  }
+
+  .nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }

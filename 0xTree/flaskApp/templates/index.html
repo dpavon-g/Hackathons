@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <title>0xTree</title>
+        <link rel="stylesheet" href="static/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Lora&display=swap" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Amatic+SC:wght@400;700&family=Bahianita&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header-container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6 text-right">
+                    <h1 class="title">0xTree</h1>
+                </div>
+                <div class="col-md-6 text-left">
+                    <img src="static/logo.svg" alt="" class="logosvg">
+                </div>
+            </div>
+        </div>
+        
+        <div class="container mt-5">
+            <div class="row">
+                <div class="text col-md-6">
+                    <h2 class="mb-4"><b>Know where you come from.</b></h2>
+                    <p><b>Discover your roots and build your legacy on the blockchain.</b></p>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center mt-3">
+                        <a href="{{ url_for('redirect_to_form') }}" class="options btn btn-primary mb-5">Create link</a>
+                        <br>
+                        <a href="{{ url_for('redirect_to_family') }}" class="options btn btn-primary mb-5">Check my family</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

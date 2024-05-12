@@ -1,0 +1,64 @@
+body {
+    background-color: #F2F2F2;
+    font-family: "Lora", sans-serif;
+}
+
+.header-container {
+    background-color: #D9AD5B;
+    text-align: center;
+    padding: 5vw;
+}
+
+.options {
+    width: 200px;
+    color: #F2F2F2 !important;
+    background-color: #D9AD5B;
+    border-color: #D9AD5B;
+}
+
+.options:active {
+    color: #F2F2F2  !important;
+    background-color: #D9AD5B !important;
+    border-color: #D9AD5B !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.options:hover {
+    color: #D9AD5B !important;
+    background-color: #F2F2F2;
+    border-color: #F2F2F2;
+}
+
+.title {
+    color: #F2F2F2;
+    font-size: 500%;
+}
+
+.text {
+    color: #D9AD5B;
+    padding-left: 100px;
+    margin-top: 2vw;
+}
+
+.logosvg {
+    animation: moveLogo 3s ease-in-out infinite;
+    width: 7vw;
+}
+
+@keyframes moveLogo {
+    0%, 100% {
+        transform: translateY(-10px); /* Posición inicial y final */
+    }
+    50% {
+        transform: translateY(20px); /* Posición intermedia */
+    }
+}
+
+.main-card {
+    /* margin-top: 20px; */
+  }
+
+  .sub-card {
+    margin-top: 20px;
+  }
